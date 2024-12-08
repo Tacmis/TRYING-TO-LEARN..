@@ -2,7 +2,7 @@
 # Ce fichier Markdown explique comment installer les dépendances, créer et remplir la base de données, et exécuter l'application FastAPI localement ou avec Docker.
 ---
 
-## FastAPI Books API
+### FastAPI Books API
 ---
 
 Cette application est une API FastAPI qui permet de gérer une collection de livres. Les données des livres sont stockées dans une base de données SQLite.
@@ -14,13 +14,13 @@ Cette application est une API FastAPI qui permet de gérer une collection de liv
   
   app = FastAPI()
   
-  # Connexion à la base de données
+  #### Connexion à la base de données
   def get_db_connection():
       conn = sqlite3.connect('fichier.db')
       conn.row_factory = sqlite3.Row
       return conn
   
-  # Modèles Pydantic
+  #### Modèles Pydantic
   class Book(BaseModel):
       id: int
       title: str
@@ -28,7 +28,7 @@ Cette application est une API FastAPI qui permet de gérer une collection de liv
       author: str
       date: str
   
-  # Routes
+  #### Routes
   @app.get("/books", response_model=List[Book])
   def read_books():
       conn = get_db_connection()
@@ -44,10 +44,6 @@ Cette application est une API FastAPI qui permet de gérer une collection de liv
       if book is None:
           raise HTTPException(status_code=404, detail="Livre introuvable")
       return dict(book)
-
-
-
-
 
 ## Utilisation
 ---

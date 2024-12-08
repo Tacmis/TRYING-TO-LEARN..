@@ -111,12 +111,10 @@ Cette application est une API FastAPI qui permet de gérer une collection de liv
     docker build -t fastapi-books .
 
 
-
-# Joyeux Noël ! 
-
-
 ### Exécuter le conteneur Docker :
 ___
 *docker run -d -p 8000:8000 fastapi-books*
+
+# Joyeux Noël ! 
 
 **L'API sera accessible à l'adresse http://127.0.0.1:8000**

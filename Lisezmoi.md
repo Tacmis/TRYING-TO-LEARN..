@@ -1,4 +1,3 @@
-
 # Installation et exécution de l'application FastAPI avec Docker
 ---
 ### FastAPI Books API
@@ -110,6 +109,10 @@ Cette application est une API FastAPI qui permet de gérer une collection de liv
 
 #### Construction de l'image Docker
     docker build -t fastapi-books .
+
+
+
+# Joyeux Noël ! 
 
 
 ### Exécuter le conteneur Docker :

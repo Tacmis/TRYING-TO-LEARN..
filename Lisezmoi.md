@@ -1,5 +1,5 @@
 
-# Ce fichier Markdown explique comment installer les dépendances, créer et remplir la base de données, et exécuter l'application FastAPI localement ou avec Docker.
+# Ce fichier Markdown explique comment installer les dépendances, créer et remplir la base de données, et exécuter l'application FastAPI localement avec Docker.
 ---
 
 ### FastAPI Books API
